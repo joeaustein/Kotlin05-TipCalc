@@ -6,33 +6,204 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="#DADADA"
+    android:orientation="horizontal"
     android:shrinkColumns="1,2,3"
     tools:context=".MainActivity">
 
     <TableRow
-        android:id="@+id/tableRow0"
-        android:layout_width="match_parent"/>
+        android:id="@+id/tableRow00"
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/billTexView"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="Total da Conta"
+            android:layout_width="match_parent"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/billEditText"
+            android:layout_span="3"
+            android:layout_width="90dp"
+            android:text="0.00"
+            android:textSize="18sp" />
+    </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow1"
-        android:layout_width="match_parent"/>
+        android:id="@+id/tableRow01"
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/tenTexView"
+            android:layout_width="104dp"
+            android:layout_column="1"
+            android:gravity="center"
+            android:text="10%"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/fifteenTexView"
+            android:layout_width="98dp"
+            android:gravity="center"
+            android:text="15%"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/twentyTexView"
+            android:layout_width="89dp"
+            android:gravity="center"
+            android:text="20%"
+            android:textSize="18sp" />
+    </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow2"
-        android:layout_width="match_parent"/>
+        android:id="@+id/tableRow02"
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/tipTexView"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="Gorjeta"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/tip10EditText"
+            android:layout_width="82dp"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="0.00"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/tip15EditText"
+            android:layout_width="91dp"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="0.00"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/tip20EditText"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="0.00"
+            android:textSize="18sp"/>
+    </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow3"
-        android:layout_width="match_parent"/>
+        android:id="@+id/tableRow03"
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/totalTexView"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="Total"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/total10EditText"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="0.00"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/total15EditText"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="0.00"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/total20EditText"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="0.00"
+            android:textSize="18sp"/>
+    </TableRow>
 
     <TableRow
         android:id="@+id/tableRow04"
-        android:layout_width="match_parent"/>
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/customTexView"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="Personalize"
+            android:textSize="18sp"/>
+
+        <SeekBar
+            id="@+id/customSeekBar"
+            android:layout_span="2"
+            android:max="30"
+            android:progress="18"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/customTipTexView"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="18%"
+            android:textSize="18sp"/>
+    </TableRow>
 
     <TableRow
         android:id="@+id/tableRow05"
-        android:layout_width="match_parent"/>
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="15dp">
 
+        <TextView
+            android:id="@+id/tipCustomTexView"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="Gorjeta"
+            android:textSize="18sp"/>
 
+        <EditText
+            android:id="@+id/tipCustomEditText"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="0.00"
+            android:textSize="18sp"/>
 
+        <TextView
+            android:id="@+id/totalCustomTipTexView"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="Total"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/totalCustomEditText"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="0.00"
+            android:textSize="18sp"/>
+    </TableRow>
 </TableLayout>
